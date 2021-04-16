@@ -42,6 +42,7 @@ public class ScanActivity extends AppCompatActivity {
                 intentIntegrator.setCaptureActivity(Capture.class);
 
                 intentIntegrator.initiateScan();
+
             }
         });
     }
@@ -65,6 +66,8 @@ public class ScanActivity extends AppCompatActivity {
 
             Bottle b = getTangleBottleProfile(intentResult.getContents());
 
+            String googlemapslink = getMaps(b);
+
             AlertDialog.Builder builder = new AlertDialog.Builder(
                     ScanActivity.this
             );
@@ -87,8 +90,21 @@ public class ScanActivity extends AppCompatActivity {
         }
     }
 
-    private Bottle getTangleBottleProfile(String contents) {
+    private String getMaps(Bottle b) {
 
-        return new Bottle(1.0,1.0,1.0,1,1,"","","","");
+        String place1 = b.getCity();
+        String place2 = b.getSoft_drink_prod();
+        String place3 = b.getRetail();
+
+        String maps = "https://www.google.com/maps/dir/"+place1+"/"+place2+"/"+place3;
+
+        return maps;
+
+    }
+
+    private Bottle getTangleBottleProfile(String contents) {
+        //Tangle read requests would be here
+
+        return new Bottle(1.0,1.0,1.0,1,1,"","Moscow","Berlin","Paris");
     }
 }

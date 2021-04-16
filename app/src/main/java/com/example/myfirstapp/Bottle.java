@@ -11,7 +11,20 @@ public class Bottle {
     //The key to the value thing
     private String transCode = "";
 
+
     private String city = "";
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getSoft_drink_prod() {
+        return soft_drink_prod;
+    }
+
+    public String getRetail() {
+        return retail;
+    }
 
     private String soft_drink_prod = "";
     private String retail = "";
