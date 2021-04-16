@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /** Called when the user taps the Scan QR button I WAS HERE*/
+    /** Called when the user taps the Scan QR button I WAS HERE, I WAS HERE TOO*/
     public void gotoScanQR(View view) {
         Intent intent = new Intent(this, ScanActivity.class);
         startActivity(intent);
