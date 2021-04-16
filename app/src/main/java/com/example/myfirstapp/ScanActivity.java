@@ -63,6 +63,10 @@ public class ScanActivity extends AppCompatActivity {
 
             textView.setText(intentResult.getContents());
 
+            Bottle b = getTangleBottleProfile(intentResult.getContents());
+
+            
+
             AlertDialog.Builder builder = new AlertDialog.Builder(
                     ScanActivity.this
             );
@@ -83,5 +87,10 @@ public class ScanActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),
                     "OOPS you haven't scanned anything", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private Bottle getTangleBottleProfile(String contents) {
+
+        return new Bottle(1.0,1.0,1.0,1,1,"","","","");
     }
 }
