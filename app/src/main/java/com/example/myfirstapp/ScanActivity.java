@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -53,6 +54,15 @@ public class ScanActivity extends AppCompatActivity {
         );
 
         if(intentResult.getContents() != null){
+
+            TextView textView = findViewById(R.id.qr_code_result);
+            //DO THE QUERY STUFF HERE OR JUST SERVE THE DATA
+
+            //TODO ask the IOTA thing for the data of this bottle
+            //TODO change the layout of the page to serve the bottles entire info
+
+            textView.setText(intentResult.getContents());
+
             AlertDialog.Builder builder = new AlertDialog.Builder(
                     ScanActivity.this
             );
