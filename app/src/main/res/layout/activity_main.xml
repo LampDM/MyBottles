@@ -43,8 +43,10 @@
         android:id="@+id/button2"
         android:layout_width="307dp"
         android:layout_height="50dp"
+        android:fontFamily="@font/quicksand_medium"
         android:onClick="gotoScanQR"
         android:text="@string/button_scan"
+        app:backgroundTint="#99CA5E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,5 +63,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041"
         app:srcCompat="@drawable/white" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="239dp"
+        android:layout_height="228dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308"
+        app:srcCompat="@drawable/logoname" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

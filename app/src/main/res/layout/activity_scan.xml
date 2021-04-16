@@ -8,16 +8,17 @@
 
     <Button
         android:id="@+id/bt_scan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/quicksand_medium"
         android:text="@string/button_dashbord_scan"
         app:backgroundTint="#99CA5E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954"
+        app:layout_constraintVertical_bias="0.458"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -30,18 +31,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.286" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="340dp"
-        android:layout_height="360dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.083" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -61,10 +50,10 @@
         android:layout_height="168dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207"
+        app:layout_constraintVertical_bias="0.166"
         app:srcCompat="@drawable/logomakr_5d4n2t" />
 
     <View
@@ -72,34 +61,22 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.511">
-
-    </LinearLayout>
+        app:layout_constraintVertical_bias="0.439" />
 
     <ScrollView
-        android:layout_width="420dp"
-        android:layout_height="324dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="368dp"
+        android:layout_height="330dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.984">
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,10 +84,176 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/comparison1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_light"
+                android:text="@string/comparisonGood"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/bottleStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_light"
+                android:text="@string/bottleStats"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. The carbon footprint of this bottle is as big as an elephant's foot. foot. " />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/EnergyUse"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/energyUse"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/Emissions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/emissions"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nrRecyclMat"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/nrRecycledMat"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/nrEcoProduser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/nrEcoProducer"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nrEnergyUsed"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/nrEnergyUse"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/nrEmissions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/nrEmissione"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recycledMat"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/recycledMat"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ecoProducer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:text="@string/ecoProducer"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Check your bottle's travels"
+                app:backgroundTint="#6FA8D8" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -125,5 +268,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/textScore"
+        android:textColor="#6FA8D8"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/nrScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/nrScore"
+        android:textColor="#6FA8D8"
+        android:textSize="44.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
