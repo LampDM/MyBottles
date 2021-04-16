@@ -65,8 +65,6 @@ public class ScanActivity extends AppCompatActivity {
 
             Bottle b = getTangleBottleProfile(intentResult.getContents());
 
-            
-
             AlertDialog.Builder builder = new AlertDialog.Builder(
                     ScanActivity.this
             );
