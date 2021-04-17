@@ -40,4 +40,5 @@ dependencies {
     implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
     implementation 'com.github.iotaledger:iota-java:Tag'
     implementation 'com.github.iotaledger:iota-java:1.0.0-beta8'
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
 }
