@@ -15,10 +15,9 @@
         app:backgroundTint="#99CA5E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458"
+        app:layout_constraintVertical_bias="0.437"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -70,8 +69,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="368dp"
-        android:layout_height="330dp"
+        android:layout_width="367dp"
+        android:layout_height="359dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,7 +151,7 @@
                     android:layout_width="188dp"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/nrRecycledMat"
+                    android:text="@string/nrEnergyUse"
                     android:textSize="18sp" />
 
                 <TextView
@@ -161,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/nrEcoProducer"
+                    android:text="@string/nrEmissione"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -196,8 +195,8 @@
                     android:layout_width="188dp"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/nrEnergyUse"
-                    android:textSize="18sp" />
+                    android:text="@string/recycledMat"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/nrEmissions"
@@ -205,8 +204,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/nrEmissione"
-                    android:textSize="18sp" />
+                    android:text="@string/ecoProducer"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -220,8 +219,8 @@
                     android:layout_width="188dp"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/recycledMat"
-                    android:textSize="14sp" />
+                    android:text="@string/nrRecycledMat"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/ecoProducer"
@@ -229,8 +228,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/quicksand_medium"
-                    android:text="@string/ecoProducer"
-                    android:textSize="14sp" />
+                    android:text="@string/nrEcoProducer"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
