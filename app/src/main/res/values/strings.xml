@@ -17,4 +17,5 @@
     <string name="empty"> </string>
     <string name="comparisonGood">The eco foodprint of this bottle equals 20 steaks.</string>
     <string name="bottleStats">What we know about this bottle...</string>
+    <string name="button3">Check your bottles travels</string>
 </resources>
