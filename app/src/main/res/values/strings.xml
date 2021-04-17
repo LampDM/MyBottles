@@ -9,7 +9,7 @@
     <string name="energyUse">Energy Use in [MJ/l]</string>
     <string name="nrEnergyUse">6.02</string>
     <string name="emissions">Emissions in [g/l]</string>
-    <string name="nrEmissione">168.58</string>
+    <string name="nrEmissions">168.58</string>
     <string name="recycledMat">Recycled Material in [%]</string>
     <string name="nrRecycledMat">70</string>
     <string name="ecoProducer">Producer eco-friendlyness</string>
