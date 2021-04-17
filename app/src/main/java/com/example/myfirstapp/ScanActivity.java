@@ -93,11 +93,11 @@ public class ScanActivity extends AppCompatActivity {
             comparison.setText("The eco footprint of this bottle equals 20 steaks!");
 
             //Energy use
-            TextView en = (TextView)findViewById(R.id.nrEnergyUsed);
+            TextView en = (TextView)findViewById(R.id.nrEnergyUse);
             en.setText(Double.toString(b.getEnergy_use()));
 
             //Recycled Material
-            TextView em = (TextView)findViewById(R.id.nrEnergyUsed);
+            TextView em = (TextView)findViewById(R.id.nrRecycledMat);
             en.setText(Double.toString(b.getRecycled()));
 
             //Emissions

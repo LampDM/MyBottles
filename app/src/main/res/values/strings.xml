@@ -12,8 +12,8 @@
 
     <string name="emissions">Emissions in [g/l]</string>
 
-    <string name="nrEmissione"></string>
-    
+    <string name="nrEmissions"></string>
+
     <string name="recycledMat">Recycled Material in [%]</string>
     <string name="nrRecycledMat"></string>
 
