@@ -1,20 +1,25 @@
 <resources>
-    <string name="app_name">MyBottles</string>
+    <string name="app_name">sipScan</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="button_scan">Scan QR Code</string>
     <string name="button_dashbord_scan">Scan new PET bottle</string>
     <string name="textScore">Score:</string>
-    <string name="nrScore">5/5</string>
+    <string name="nrScore">None</string>
+
     <string name="energyUse">Energy Use in [MJ/l]</string>
-    <string name="nrEnergyUse">6.02</string>
+    <string name="nrEnergyUse"></string>
+
     <string name="emissions">Emissions in [g/l]</string>
-    <string name="nrEmissione">168.58</string>
+    <string name="nrEmissione"></string>
+
     <string name="recycledMat">Recycled Material in [%]</string>
-    <string name="nrRecycledMat">70</string>
+    <string name="nrRecycledMat"></string>
+
     <string name="ecoProducer">Producer eco-friendlyness</string>
-    <string name="nrEcoProducer">1</string>
+    <string name="nrEcoProducer"></string>
+
     <string name="empty"> </string>
-    <string name="comparisonGood">The eco foodprint of this bottle equals 20 steaks.</string>
+    <string name="comparisonGood"></string>
     <string name="bottleStats">What we know about this bottle...</string>
 </resources>

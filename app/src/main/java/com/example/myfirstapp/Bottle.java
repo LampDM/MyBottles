@@ -3,6 +3,31 @@ package com.example.myfirstapp;
 public class Bottle {
 
     private double energy_use = 0.0;
+
+    public double getEnergy_use() {
+        return energy_use;
+    }
+
+    public double getEmissions() {
+        return emissions;
+    }
+
+    public double getRecycled() {
+        return recycled;
+    }
+
+    public int getEcof() {
+        return ecof;
+    }
+
+    public int getTransport() {
+        return Transport;
+    }
+
+    public String getTransCode() {
+        return transCode;
+    }
+
     private double emissions = 0.0;
     private double recycled = 0.0;
     private int ecof = 0;
@@ -10,7 +35,6 @@ public class Bottle {
 
     //The key to the value thing
     private String transCode = "";
-
 
     private String city = "";
 

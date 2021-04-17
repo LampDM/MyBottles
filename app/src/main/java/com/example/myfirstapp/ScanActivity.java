@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.google.zxing.integration.android.IntentResult;
 public class ScanActivity extends AppCompatActivity {
 
     Button btScan;
+    String googlemapslink = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,19 @@ public class ScanActivity extends AppCompatActivity {
 
             }
         });
+
+
+        // Assuming you are using xml layout
+        Button button = (Button)findViewById(R.id.button3);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse(googlemapslink));
+                startActivity(viewIntent);
+            }
+        });
     }
 
     @Override
@@ -62,11 +77,36 @@ public class ScanActivity extends AppCompatActivity {
             //TODO ask the IOTA thing for the data of this bottle
             //TODO change the layout of the page to serve the bottles entire info
 
-            textView.setText(intentResult.getContents());
+            //Sets contents of textview
+            //textView.setText(intentResult.getContents());
 
             Bottle b = getTangleBottleProfile(intentResult.getContents());
 
-            String googlemapslink = getMaps(b);
+            //Set all the values
+
+            //Overall score
+            TextView score = (TextView)findViewById(R.id.nrScore);
+            score.setText("5/5");
+
+            //Comparison
+            TextView comparison = (TextView)findViewById(R.id.comparison1);
+            comparison.setText("The eco footprint of this bottle equals 20 steaks!");
+
+            //Energy use
+            TextView en = (TextView)findViewById(R.id.nrEnergyUsed);
+            en.setText(Double.toString(b.getEnergy_use()));
+
+            //Recycled Material
+            TextView em = (TextView)findViewById(R.id.nrEnergyUsed);
+            en.setText(Double.toString(b.getRecycled()));
+
+            //Emissions
+
+
+            //Producer eco-friendlyness
+
+
+            googlemapslink = getMaps(b);
 
             AlertDialog.Builder builder = new AlertDialog.Builder(
                     ScanActivity.this
@@ -99,12 +139,11 @@ public class ScanActivity extends AppCompatActivity {
         String maps = "https://www.google.com/maps/dir/"+place1+"/"+place2+"/"+place3;
 
         return maps;
-
     }
 
     private Bottle getTangleBottleProfile(String contents) {
         //Tangle read requests would be here
 
-        return new Bottle(1.0,1.0,1.0,1,1,"","Moscow","Berlin","Paris");
+        return new Bottle(6.02,168.58,70,1,1,"","Moscow","Berlin","Paris");
     }
 }
