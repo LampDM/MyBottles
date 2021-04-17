@@ -98,13 +98,15 @@ public class ScanActivity extends AppCompatActivity {
 
             //Recycled Material
             TextView em = (TextView)findViewById(R.id.nrRecycledMat);
-            en.setText(Double.toString(b.getRecycled()));
+            em.setText(Double.toString(b.getRecycled()));
 
             //Emissions
-
+            TextView emis = (TextView)findViewById(R.id.nrEmissions);
+            emis.setText(Double.toString(b.getEmissions()));
 
             //Producer eco-friendlyness
-
+            TextView ecof = (TextView)findViewById(R.id.nrEcoProducer);
+            ecof.setText(Double.toString(b.getEcof()));
 
             googlemapslink = getMaps(b);
 
